@@ -1,16 +1,16 @@
 <?php
 $toPhone = "TO_PHONE_NUMBER";
-$fileLink = "LINK_OF_FILE";
-$fileName = "Sales Report";
+$fileLink = "LINK_OF_FILE"; //HTTP or HTTPS link to the file on your server
+$fileName = "FILE_NAME"; //FILE name that you want to appear on whatsapp
 $jsonData = '{
     "messaging_product": "whatsapp",
     "recipient_type": "individual",
     "to": "'.$toPhone.'",
     "type": "template",
     "template": {
-        "name": "customer_statement",
+        "name": "MESSAGE_TEMPLATE_NAME",
         "language": {
-            "code": "en_GB"
+            "code": "MESSAGE_TEMPLATE_LANGUAGE CODE"
         },
 		"components":[
 			{
